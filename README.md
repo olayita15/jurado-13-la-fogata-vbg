@@ -14,6 +14,7 @@ npm run dev
 - `/equipo/vela-roja` — Fiscalía
 - `/equipo/puente-verde` — Defensa
 - `/equipo/sol-ambar` — Jurado
+- `/juez/roble-azul` — Juez
 
 Las rutas son deliberadamente discretas, pero **no son privadas ni seguras**: cualquier persona que conozca la URL puede abrirlas. Para información realmente reservada se requiere autenticación o una distribución controlada de los enlaces.
 

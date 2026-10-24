@@ -19,7 +19,7 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'static',
     prerender: {
-      routes: ['/equipo/vela-roja', '/equipo/puente-verde', '/equipo/sol-ambar']
+      routes: ['/equipo/vela-roja', '/equipo/puente-verde', '/equipo/sol-ambar', '/juez/roble-azul']
     }
   },
   compatibilityDate: '2025-03-01'
