@@ -54,4 +54,38 @@
   font-size: .7rem;
   font-weight: 800;
 }
+
+.insumos-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .45rem;
+  min-height: 3.15rem;
+  padding: .65rem .9rem;
+  border: 1px solid #3e665e30;
+  border-radius: .5rem;
+  background: #e8f0eb;
+  color: #285148;
+  font-size: .95rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.insumos-link:hover,
+.insumos-link:focus-visible {
+  background: #d7e7dc;
+  color: #173d35;
+  outline: 3px solid #e6ad75;
+  outline-offset: 2px;
+}
+
+.insumos-link > svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.insumos-link .external-link-icon {
+  width: .85rem;
+  height: .85rem;
+}
 </style>
