@@ -6,7 +6,7 @@ const isOpen = defineModel<boolean>({ default: false })
 <template>
   <UModal v-model="isOpen" :ui="{ width: 'sm:max-w-3xl' }">
     <article class="formal-document">
-      <header class="document-header"><div><p>TRIBUNAL PEDAGÓGICO INDEPENDIENTE</p><h1>Acta de Acusación</h1><span>{{ hearing.number }}</span></div><div class="dialog-header-actions"><UIcon name="i-lucide-scale" /><UButton class="dialog-close" color="gray" variant="ghost" icon="i-lucide-x" aria-label="Cerrar acta" @click="isOpen = false" /></div></header>
+      <header class="document-header"><div><p>TRIBUNAL PEDAGÓGICO INDEPENDIENTE</p><div class="dialog-title"><UIcon name="i-lucide-scale" /><h1>Acta de Acusación</h1></div><span>{{ hearing.number }}</span></div><div class="dialog-header-actions"><button class="dialog-close" type="button" aria-label="Cerrar acta" @click="isOpen = false"><UIcon name="i-lucide-x" /></button></div></header>
       <div class="document-meta"><div><b>Fecha de presentación</b><span>{{ accusation.date }}</span></div><div><b>Persona denunciante</b><span>Camila Giraldo</span></div><div><b>Persona denunciada</b><span>Mateo Ríos</span></div></div>
       <section><h2>I. Considerando</h2><p>{{ accusation.background }}</p></section>
       <section><h2>II. Hechos objeto de denuncia</h2><article v-for="(fact, index) in accusation.facts" :key="fact.title" class="charged-fact"><span>{{ String(index + 1).padStart(2, '0') }}</span><div><h3>{{ fact.title }}</h3><p>{{ fact.text }}</p></div></article></section>
