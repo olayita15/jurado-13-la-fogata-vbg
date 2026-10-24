@@ -5,7 +5,7 @@ const route = useRoute()
 const slugToTeam: Record<string, Team> = { 'vela-roja': 'fiscalia', 'puente-verde': 'defensa', 'sol-ambar': 'jurado' }
 const caseFile = {
   number: 'Expediente pedagógico 01–VBG',
-  title: 'El chat que llegó a la asamblea',
+  title: 'Amor político en los tiempos del tigre',
   court: 'Tribunal pedagógico independiente',
   claimant: 'Camila Giraldo · Persona denunciante',
   respondent: 'Mateo Ríos · Persona denunciada'
@@ -31,7 +31,7 @@ useHead({ title: `${team.name} · Jurado 13` })
       <header class="hearing-header"><div class="role-symbol"><UIcon :name="team.icon" /></div><div><p class="eyebrow">{{ caseFile.court }}</p><h1>{{ team.name }}</h1><p>{{ team.subtitle }}</p></div></header>
       <section class="case-summary"><div><p class="eyebrow">Audiencia pedagógica</p><h2>{{ caseFile.title }}</h2><p>{{ caseFile.claimant }} <span>contra</span> {{ caseFile.respondent }}</p></div></section>
       <section class="case-actions"><UButton icon="i-lucide-file-text" size="lg" block @click="showAccusation = true">Acta de Acusación</UButton><UButton icon="i-lucide-book-open-check" size="lg" color="gray" variant="soft" block @click="showRules = true">Reglamento</UButton><UButton icon="i-lucide-folder-open" size="lg" color="amber" variant="soft" block @click="showEvidence = true">Evidencias</UButton><UButton icon="i-lucide-book-marked" size="lg" color="emerald" variant="soft" block :href="vbgGuideUrl" target="_blank">Insumos VBG</UButton></section>
-      <section class="role-workspace"><p class="eyebrow">Mandato del equipo</p><h2>{{ team.instruction }}</h2><ul><li v-for="point in team.focus" :key="point">{{ point }}</li></ul></section>
+      <section class="role-workspace"><p class="eyebrow">Objetivo del equipo</p><h2>{{ team.objective }}</h2></section>
     </div>
     <ActaDeAcusacionDialog v-model="showAccusation" />
     <ReglamentoAudienciaDialog v-model="showRules" />

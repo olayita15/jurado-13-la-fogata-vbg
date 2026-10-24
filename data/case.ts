@@ -2,20 +2,20 @@ export type Team = 'fiscalia' | 'defensa' | 'jurado'
 
 export const hearing = {
   number: 'Expediente pedagógico 01–VBG',
-  title: 'El chat que llegó a la asamblea',
+  title: 'Amor político en los tiempos del tigre',
   court: 'Tribunal pedagógico independiente',
   claimant: 'Camila Giraldo · Persona denunciante',
   respondent: 'Mateo Ríos · Persona denunciada'
 }
 
-export const teams: Record<Team, { name: string; subtitle: string; icon: string; instruction: string; focus: string[] }> = {
-  fiscalia: { name: 'Fiscalía', subtitle: 'Representación de la denuncia', icon: 'i-lucide-scale', instruction: 'Presenten el Acta de Acusación como una hipótesis que debe sustentarse. Organicen los hechos, expliquen por qué podrían ser relevantes y soliciten una decisión proporcional.', focus: ['Distingan hechos denunciados de interpretaciones.', 'Expliquen el posible impacto sobre autonomía y participación.', 'Soliciten una medida de reparación y no repetición, no una sanción automática.'] },
-  defensa: { name: 'Defensa', subtitle: 'Garantías de la persona denunciada', icon: 'i-lucide-shield-check', instruction: 'Respondan a cada hecho planteado en el Acta sin descalificar a Camila. Examinen qué está acreditado, qué requiere contraste y qué respuesta o reparación podrían reconocer.', focus: ['No usen estereotipos ni vida íntima para desacreditar.', 'Diferencien desacuerdo, daño y posible violencia.', 'Protejan las garantías de Mateo sin normalizar conductas de control.'] },
-  jurado: { name: 'Jurado', subtitle: 'Instancia decisoria', icon: 'i-lucide-landmark', instruction: 'Escuchen ambas posiciones, contrasten los hechos y redacten una decisión pedagógica razonada. La decisión debe explicar qué se considera establecido, qué no y por qué.', focus: ['Apliquen enfoque de género y debido proceso.', 'Eviten exigir una “prueba perfecta” para hechos privados.', 'Propongan medidas proporcionales de cuidado, reparación y no repetición.'] }
+export const teams: Record<Team, { name: string; subtitle: string; icon: string; objective: string }> = {
+  fiscalia: { name: 'Fiscalía', subtitle: 'Representación de la denuncia', icon: 'i-lucide-scale', objective: 'Defender a Camila y sustentar su denuncia con las evidencias.' },
+  defensa: { name: 'Defensa', subtitle: 'Garantías de la persona denunciada', icon: 'i-lucide-shield-check', objective: 'Defender a Mateo y garantizar que su versión sea escuchada.' },
+  jurado: { name: 'Jurado', subtitle: 'Instancia decisoria', icon: 'i-lucide-landmark', objective: 'Ser imparcial, escuchar atentamente y deliberar una sanción.' }
 }
 
 export const accusation = {
-  date: '18 de agosto de 2026',
+  date: '24 de octubre de 2026',
   background: 'Considerando que las relaciones afectivas pueden convertirse en espacios donde se presentan conductas de control, presión psicológica y limitación de la autonomía, Camila Giraldo acusa a Mateo Ríos, su pareja durante los últimos dos años, de ejercer comportamientos que considera violentos y que han afectado tanto su vida personal como su participación política.',
   facts: [
     { title: 'Conflictos relacionados con una expareja', text: 'La expareja de Camila, Antonio, es también su dirección política. Las reuniones de su organización se realizan habitualmente en la casa de él y, debido a que terminan tarde, Camila suele quedarse allí por razones de seguridad. Mateo ha manifestado reiteradamente su incomodidad con esta situación, pues considera que la cercanía entre ambos sobrepasa los límites de la relación. Camila sostiene que se trata de una expresión de inseguridad de Mateo y que, aunque comprende que pueda sentir celos o desconfianza, esto no justifica que cuestione sus decisiones ni que intente condicionar su participación política.' },

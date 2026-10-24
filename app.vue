@@ -43,4 +43,15 @@
   flex: none;
   color: var(--coral);
 }
+
+.evidence-type-chip {
+  display: inline-flex;
+  margin-top: .7rem;
+  padding: .28rem .55rem;
+  border-radius: 999px;
+  background: #f7e5c8;
+  color: var(--wine);
+  font-size: .7rem;
+  font-weight: 800;
+}
 </style>
