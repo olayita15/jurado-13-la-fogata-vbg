@@ -89,6 +89,28 @@
   height: .85rem;
 }
 
+.hearing-protocol {
+  display: flex;
+  align-items: flex-start;
+  gap: .8rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: .65rem;
+  background: #f8e6e2;
+  border-left: 4px solid var(--coral);
+}
+
+.hearing-protocol > svg {
+  flex: none;
+  width: 1.4rem;
+  height: 1.4rem;
+  color: var(--coral);
+}
+
+.hearing-protocol p { margin: 0; }
+.hearing-protocol ul { margin: .4rem 0 0; padding-left: 1.1rem; }
+.hearing-protocol li { margin: .3rem 0; font-size: .88rem; line-height: 1.45; }
+
 .judge-page {
   min-height: 100svh;
   padding-bottom: 2rem;
